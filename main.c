@@ -38,6 +38,11 @@ void flush_logs_and_enable_gfx(void);
 
 #define MINIMUM_MINI_VERSION 0x00010001
 
+unsigned char __SDATA_START__;
+unsigned char __SDATA2_START__;
+unsigned char __SBSS_END__;
+unsigned char __SBSS2_END__;
+
 int main(void)
 {
 	exception_init();

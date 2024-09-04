@@ -2,6 +2,8 @@
 
 
 	.globl _start
+	.globl __init
+__init:
 _start:
 
 	# Clear all GPRs

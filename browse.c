@@ -4,6 +4,7 @@
 #include "malloc.h"
 #include "log.h"
 #include "powerpc_elf.h"
+#include "time.h"
 
 char *browse_menu_entries[CONSOLE_LINES-HELP_LINES-HEAD_LINES-2];
 int browse_menu_entries_count = 0;

@@ -128,7 +128,7 @@ u16 gpio_read(void) {
 			res |= GPIO_POWER;
 			
 			while(read32(0x0d8000c8) & 1);
-				write32(0x0d8000d0, 1);
+			write32(0x0d8000d0, 1);
 		} else if (irq_flag & 0x40) {
 			res |= GPIO_EJECT;
 
