@@ -138,7 +138,7 @@ static char *memstr(char *mem, unsigned int fsize, const char *s) {
 	if (match != l)
 		return NULL;
 
-	return mem+i;
+	return mem + i - l;
 }
 
 const char 	*bootargs_end_marker = "mark.end=1",
